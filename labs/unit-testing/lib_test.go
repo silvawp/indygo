@@ -1,6 +1,7 @@
 package lib
 
 import (
+	"fmt"
 	"math/rand"
 	"slices"
 	"strings"
@@ -175,4 +176,12 @@ func fillWithRandomBytes(m []byte) {
 	for i := range len(m) {
 		m[i] = byte("0123456789ABCDEF"[rand.Int()%16])
 	}
+}
+
+func Example() {
+	var s = "a string"
+	fmt.Println(s)
+
+	// OUTPUT:
+	// a string
 }
